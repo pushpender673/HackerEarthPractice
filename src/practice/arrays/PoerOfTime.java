@@ -9,15 +9,15 @@ public class PoerOfTime {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		String l[] = br.readLine().split("\\s+");
-		int c[] = new int[n];
-		int search_arr[] = new int[100];
+		String[] l = br.readLine().split("\\s+");
+		int[] c = new int[n];
+		int[] search_arr = new int[100];
 		for (int i = 0; i < l.length; i++) {
 			c[i] = Integer.parseInt(l[i]);
 			search_arr[c[i]] = i;
 		}
 		l = br.readLine().split("\\s+");
-		int p[] = new int[n];
+		int[] p = new int[n];
 		for (int i = 0; i < l.length; i++)
 			p[i] = Integer.parseInt(l[i]);
 		
@@ -25,7 +25,7 @@ public class PoerOfTime {
 
 	}
 
-	public static int calTotalExectionTime(int c[], int p[], int s_arr[]) {
+	public static int calTotalExectionTime(int[] c, int[] p, int[] s_arr) {
 		int sum =0, j=0, i=0 ;
 		
 		while(j<p.length) {

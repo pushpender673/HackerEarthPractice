@@ -24,7 +24,7 @@ public class SortSubString {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine());
 		while(t-->0) {
-			String line[] = br.readLine().split("\\s+");
+			String[] line = br.readLine().split("\\s+");
 			int n = Integer.parseInt(line[1]);
 			int m = Integer.parseInt(line[2]);
 			System.out.println(sortSubString(line[0].toCharArray(), n, m));

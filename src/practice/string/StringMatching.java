@@ -44,7 +44,7 @@ public class StringMatching {
 	public static boolean knuthMorisPrattStringSearch(char[] t, char[] p) {
 		
 		// Prepare Suffix and Prefix Match array for Pattern P
- 		int c[] = new int[p.length+1];
+ 		int[] c = new int[p.length+1];
 		int i = 0, j = 1;
 		c[0] = 0;
 		while( j < p.length) {

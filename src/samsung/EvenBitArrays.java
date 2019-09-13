@@ -3,8 +3,6 @@ package samsung;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import javax.swing.Box.Filler;
-
 public class EvenBitArrays {
 
 	public static void main(String[] args) throws Exception {
@@ -18,10 +16,10 @@ public class EvenBitArrays {
 		 * }
 		 */
 
-		System.out.println(findNext(t));;
+		System.out.println(findNext(t));
 	}
 
-	public static long minSum(int a[], int n) {
+	public static long minSum(int[] a, int n) {
 		long sum = 0;
 
 		for (int i = 0; i < n; i++) {

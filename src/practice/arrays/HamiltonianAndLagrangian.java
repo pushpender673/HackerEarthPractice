@@ -19,14 +19,14 @@ public class HamiltonianAndLagrangian {
 		FastReader sc = new FastReader();
 
 		int n = sc.nextInt();
-		int a[] = new int[n];
+		int[] a = new int[n];
 		for (int i = 0; i < n; i++)
 			a[i] = sc.nextInt();
 		findRightToLeftHigherEle(a, n);
 
 	}
 
-	static void findRightToLeftHigherEle(int a[], int n) {
+	static void findRightToLeftHigherEle(int[] a, int n) {
 
 		Deque<Integer> stack = new ArrayDeque<Integer>();
 		for (int i = n - 1; i >= 0; i--)

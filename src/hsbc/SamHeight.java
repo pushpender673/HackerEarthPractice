@@ -12,10 +12,10 @@ public class SamHeight {
 		int t = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
 		while(t--> 0) {
-			String l[] = br.readLine().split("\\s+");
+			String[] l = br.readLine().split("\\s+");
 			int n = Integer.parseInt(l[0]);
 			int s = Integer.parseInt(l[1]);
-			int a[] = new int[n+1];
+			int[] a = new int[n+1];
 			a[0] = s;
 			l = br.readLine().split("\\s+");
 			for(int i =1;i<=n;i++)
